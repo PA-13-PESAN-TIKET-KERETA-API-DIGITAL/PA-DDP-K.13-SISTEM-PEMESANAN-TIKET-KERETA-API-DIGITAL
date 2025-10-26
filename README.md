@@ -76,7 +76,29 @@ Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: `
 <img width="471" height="291" alt="image" src="https://github.com/user-attachments/assets/cf549bc4-f6e3-4514-8bfe-d7fd496fe80c" />
 
 #### Jika Ingin Melihat Jadwal Pilih ``1``
-Menampilkan seluruh jadwal dari ``jadwal.csv``
+Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
+Penjelasan : Sama seperti user tapi admin bisa edit data
 
+#### Jika Ingin Menambah Jadwal Pilih ``2``
+Fungsi : Menambahkan data kereta baru ke jadwal
+Penjelasan : Wajib isi ID unik agar tidak duplikat
 
+#### Jika Ingin Mengupdate Jadwal Pilih ``3``
+Fungsi : Mengedit data jadwal yang sudah ada
+Penjelasan : Dapat mengubah nama, asal, tujuan, jam, harga
 
+#### Jika Ingin Menghapus Jadwal Pilih ``4``
+Fungsi : Menghapus jadwal kereta berdasarkan ID
+Penjelasan : Data akan dihapus dari file CSV
+
+#### Jika Ingin Melihat Semua Transaksi User Pilih ``5``
+Fungsi : Melihat semua transaksi user
+Penjelasan : Data diambil dari transaksi.csv
+
+#### Jika Ingin Menghapus Transaksi User Pilih ``6``
+Fungsi : Menghapus transaksi tertentu jika diperlukan
+Penjelasan : Misalnya pembatalan atau kesalahan input
+
+#### Jika Ingin Logout Pilih Pilih ``7``
+Fungsi : Kembali ke menu awal
+Penjelasan : Untuk keluar dari mode admin
