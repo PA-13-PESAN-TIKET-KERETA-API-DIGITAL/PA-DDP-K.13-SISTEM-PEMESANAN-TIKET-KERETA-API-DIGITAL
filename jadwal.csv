@@ -1,5 +1,7 @@
 ID_Kereta,Nama_Kereta,Asal,Tujuan,Jam_Berangkat,Harga
-K001,Argo Bromo,Jakarta,Surabaya,08:00,250000
-K002,Taksaka,Yogyakarta,Jakarta,10:30,200000
+K001,Argo Bromo,Jakarta,Surabaya,09:00,250000
+K002,Donat,Yogyakarta,Jakarta,10.35,300000
 K003,Malioboro Express,Malang,Yogyakarta,14:00,180000
 K004,Thomas Exoress,Sangatta,Balikpapan,07:00,300000
+K005,Whoosh,Bandung,Jakarta,09:15,500000
+K006,Argo,Nunukan,Tarakan,09:00,120000
