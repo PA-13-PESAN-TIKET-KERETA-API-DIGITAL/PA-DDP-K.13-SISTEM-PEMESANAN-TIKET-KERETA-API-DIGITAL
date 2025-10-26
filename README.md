@@ -22,3 +22,61 @@ Anggota :
 ### Flowchart Menu Sebagai User
 ![Flowchart PA 100-Login Admin](https://github.com/user-attachments/assets/c8c88db0-9b25-42bc-898f-308d8bdedc2a)
 
+## Instalasi & Persiapan
+### Install Library
+Sebelum menjalankan program, instal beberapa library berikut:
+
+<img width="1475" height="416" alt="image" src="https://github.com/user-attachments/assets/6f1d28ef-0646-4d8e-b900-367a7e0977b7" />
+
+### Jalankan Program
+Tekan play di Visual Studio Code untuk memulai program
+
+<img width="652" height="368" alt="image" src="https://github.com/user-attachments/assets/d116e2da-297b-427f-bb2b-fce3bb69fb9c" />
+
+### Menambahkan 3 file CSV didalam folder
+Dibutuhkan agar program berjalan dengan semestinya dan memiliki database
+
+<img width="358" height="101" alt="image" src="https://github.com/user-attachments/assets/d7c5e441-0b6f-4acb-acfb-a20c5eb7cd35" />
+
+## Panduan Penggunaan
+### 1. Loading welcome
+Menunggu beberapa detik sebelum memulai program
+
+<img width="470" height="165" alt="image" src="https://github.com/user-attachments/assets/bab684a7-dad7-48ed-b688-86fd72f584a7" />
+
+### 2. Tampilan Awal
+Saat program dijalankan, akan muncul loading welcome lalu menu utama:
+
+<img width="470" height="186" alt="image" src="https://github.com/user-attachments/assets/f60c4638-b5d9-4982-ad97-cfe01dc8d2f8" />
+
+### 3. Register Akun Baru
+Jika belum punya akun:
+1. Pilih ``2. Register``
+2. Masukkan nama pengguna (tanpa spasi/simbol)
+3. Masukkan password
+4. Akun baru otomatis disimpan ke users.csv dengan role user
+5. Setelah berhasil, kembali ke menu utama untuk login.
+
+<img width="465" height="137" alt="image" src="https://github.com/user-attachments/assets/2d405b66-8a76-44b8-8340-deefd63a6a9e" />
+
+### 4. Login Akun
+Dari menu utama, pilih ``1. Login``
+Masukkan username dan password yang sudah terdaftar.
+- Jika akun admin → masuk ke menu admin
+  
+<img width="472" height="150" alt="image" src="https://github.com/user-attachments/assets/1b9ae97a-c309-4180-9d79-63d085a3941d" />
+
+- Jika akun user → masuk ke menu user
+  
+<img width="467" height="156" alt="image" src="https://github.com/user-attachments/assets/833a1494-1a55-4d28-92b8-062a030608fa" />
+
+### 4. Menu Admin
+Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: ``admin, admin123, 0, admin``):
+
+<img width="471" height="291" alt="image" src="https://github.com/user-attachments/assets/cf549bc4-f6e3-4514-8bfe-d7fd496fe80c" />
+
+#### Jika Ingin Melihat Jadwal Pilih ``1``
+Menampilkan seluruh jadwal dari ``jadwal.csv``
+
+
+
