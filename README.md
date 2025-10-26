@@ -24,7 +24,7 @@ Anggota :
 
 ## Instalasi & Persiapan
 ### Install Library
-Sebelum menjalankan program, instal beberapa library berikut:
+Sebelum menjalankan program, install beberapa library berikut:
 
 <img width="1475" height="416" alt="image" src="https://github.com/user-attachments/assets/6f1d28ef-0646-4d8e-b900-367a7e0977b7" />
 
