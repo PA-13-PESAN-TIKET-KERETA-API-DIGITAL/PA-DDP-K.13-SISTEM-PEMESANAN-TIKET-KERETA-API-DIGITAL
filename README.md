@@ -124,7 +124,7 @@ Penjelasan : Untuk keluar dari mode admin.
 <img width="466" height="271" alt="image" src="https://github.com/user-attachments/assets/9e67db5f-1aa5-4e8e-99dd-6bf815993a21" />
 <img width="473" height="238" alt="image" src="https://github.com/user-attachments/assets/a8c9c6a4-e0b2-49dc-b5c2-e22724301174" />
 
-### Menu User
+### 5. Menu User
 Setelah login sebagai ``user``:
 
 <img width="467" height="280" alt="image" src="https://github.com/user-attachments/assets/2b2b236c-9418-4ca9-916a-d02910b41545" />
@@ -162,5 +162,9 @@ Penjelasan : Untuk berpindah user atau admin
 
 <img width="473" height="223" alt="image" src="https://github.com/user-attachments/assets/e005207a-453c-42e9-8b44-5ce19ba5ac17" />
 <img width="463" height="217" alt="image" src="https://github.com/user-attachments/assets/24ddf761-d1ef-4c04-9a61-f05557feb1e4" />
+
+### 6. Mengakhiri Program
+Kapan pun dari menu utama, pilih:
+<img width="467" height="217" alt="image" src="https://github.com/user-attachments/assets/68d887d5-42c5-4371-91bc-889da0464843" />
 
 
