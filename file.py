@@ -141,7 +141,7 @@ def lihat_jadwal():
     if not jadwal:
         print("Belum ada jadwal.")
         return
-    table =  PrettyTable(["ID", "Nama Kereta", "Asal", "Tujuan", "Jam", "Harga"])
+    table = PrettyTable(["ID", "Nama Kereta", "Asal", "Tujuan", "Jam", "Harga"])
     for j in jadwal:
         table.add_row([j["ID_Kereta"], j["Nama_Kereta"], j["Asal"], j["Tujuan"], j["Jam_Berangkat"], j["Harga"]])
     print(table)
@@ -224,34 +224,70 @@ def hapus_jadwal():
 def update_jadwal():
     jadwal = load_csv(JADWAL_FILE)
     if not jadwal:
-        print("Belum ada jadwal untuk diupdate.")
+        print(Fore.RED + "Belum ada jadwal untuk diupdate.")
         return
 
     lihat_jadwal()
     try:
-        target = input("\nMasukkan ID kereta yang mau diupdate: ")
+        target = input("\nMasukkan ID kereta yang mau diupdate: ").strip()
     except KeyboardInterrupt:
-        print(Fore.RED + "\nERROR, Jangan Tekan CRTL+C")
+        print(Fore.RED + "\nERROR: Jangan Tekan CTRL+C")
         return
     except EOFError:
-        print(Fore.RED +"\nERROR, Jangan Tekan CRTL+Z")
+        print(Fore.RED + "\nERROR: Jangan Tekan CTRL+Z")
         return
-    
 
     for j in jadwal:
-        if j["ID_Kereta"] == target:
+        if j["ID_Kereta"].lower() == target.lower():
             print("\nTekan Enter kalau tidak mau ubah kolom tertentu.")
-            j["Nama_Kereta"] = input(f"Nama Kereta [{j['Nama_Kereta']}]: ") or j["Nama_Kereta"]
-            j["Asal"] = input(f"Asal [{j['Asal']}]: ") or j["Asal"]
-            j["Tujuan"] = input(f"Tujuan [{j['Tujuan']}]: ") or j["Tujuan"]
-            j["Jam_Berangkat"] = input(f"Jam Berangkat [{j['Jam_Berangkat']}]: ") or j["Jam_Berangkat"]
-            j["Harga"] = input(f"Harga [{j['Harga']}]: ") or j["Harga"]
+            try:
+                nama_baru = input(f"Nama Kereta [{j['Nama_Kereta']}]: ").strip()
+                if nama_baru:
+                    j["Nama_Kereta"] = nama_baru
+
+                asal_baru = input(f"Asal [{j['Asal']}]: ").strip()
+                if asal_baru:
+                    j["Asal"] = asal_baru
+
+                tujuan_baru = input(f"Tujuan [{j['Tujuan']}]: ").strip()
+                if tujuan_baru:
+                    j["Tujuan"] = tujuan_baru
+
+                jam_input = input(f"Jam Berangkat [{j['Jam_Berangkat']}]: ").strip()
+                if jam_input:
+                    while True:
+                        try:
+                            jam_h, jam_m = jam_input.split(":")
+                            jam_h, jam_m = int(jam_h), int(jam_m)
+                            if 0 <= jam_h <= 23 and 0 <= jam_m <= 59:
+                                j["Jam_Berangkat"] = f"{jam_h:02d}:{jam_m:02d}"
+                                break
+                            else:
+                                print(Fore.RED + "Jam tidak valid! Harus antara 00:00 sampai 23:59.")
+                        except ValueError:
+                            print(Fore.RED + "Format jam salah! Gunakan format hh:mm, contoh 07:30.")
+                        jam_input = input("Masukkan jam baru (hh:mm) atau tekan Enter untuk batal: ").strip()
+                        if not jam_input:
+                            break
+
+                harga_baru = input(f"Harga [{j['Harga']}]: ").strip()
+                if harga_baru:
+                    if harga_baru.isdigit():
+                        j["Harga"] = harga_baru
+                    else:
+                        print(Fore.RED + "Input harga tidak valid! Harga lama dipertahankan.")
+            except KeyboardInterrupt:
+                print(Fore.RED + "\nERROR: Jangan Tekan CTRL+C")
+                return
+            except EOFError:
+                print(Fore.RED + "\nERROR: Jangan Tekan CTRL+Z")
+                return
 
             save_csv(JADWAL_FILE, jadwal, ["ID_Kereta", "Nama_Kereta", "Asal", "Tujuan", "Jam_Berangkat", "Harga"])
-            print("\nJadwal berhasil diupdate!\n")
+            print(Fore.GREEN + "\nJadwal berhasil diupdate!\n")
             return
 
-    print("ID kereta tidak ditemukan.\n")
+    print(Fore.RED + f"ID kereta '{target}' tidak ditemukan.")
 
 def lihat_semua_transaksi():
     transaksi = load_csv(TRANSAKSI_FILE)
@@ -321,21 +357,6 @@ def beli_tiket(user):
             save_csv(USER_FILE, users, ["Nama", "Password", "Saldo", "Role"])
             save_csv(TRANSAKSI_FILE, transaksi, ["Nama_User", "ID_Kereta", "Nama_Kereta", "Asal", "Tujuan", "Jam_Berangkat", "Harga", "Tanggal_Transaksi"])
             print("Tiket berhasil dibeli!")
-            # Tampilkan detail transaksi yang baru saja dibuat (hanya transaksi ini)
-            last_trx = transaksi[-1]
-            trx_table = PrettyTable(["User", "ID", "Kereta", "Asal", "Tujuan", "Jam", "Harga", "Tanggal"])
-            trx_table.add_row([
-                last_trx.get("Nama_User"),
-                last_trx.get("ID_Kereta"),
-                last_trx.get("Nama_Kereta"),
-                last_trx.get("Asal"),
-                last_trx.get("Tujuan"),
-                last_trx.get("Jam_Berangkat"),
-                last_trx.get("Harga"),
-                last_trx.get("Tanggal_Transaksi")
-            ])
-            print("\nDetail transaksi:")
-            print(trx_table)
             return
     print("ID Kereta tidak ditemukan.")
 
@@ -352,6 +373,7 @@ def lihat_transaksi_user(user):
 
 def top_up(user):
     users = load_csv(USER_FILE)
+    
     try:
         tambah = int(input("Masukkan jumlah top up: "))
     except ValueError:
@@ -363,8 +385,6 @@ def top_up(user):
     except EOFError:
         print(Fore.RED +"\nERROR, Jangan Tekan CRTL+Z")
         return top_up(user)
-    except ValueError:
-        print(Fore.RED+"ERROR, Ulangi Kembali!")
     
     if tambah <= 0:
         print(Fore.RED + "ERROR, Jangan -!")
@@ -395,8 +415,8 @@ def menu_admin():
         print(Fore.RED +"===================================================")
         print(Fore.RED +"|"," 1. Lihat Jadwal Kereta                        ",Fore.RED +"|")
         print(Fore.RED +"|"," 2. Tambah Jadwal Kereta                       ",Fore.RED +"|")
-        print(Fore.RED +"|"," 3. Hapus Jadwal Kereta                        ",Fore.RED +"|")
-        print(Fore.RED +"|"," 4. Update Jadwal Kereta                       ",Fore.RED +"|")
+        print(Fore.RED +"|"," 3. Update Jadwal Kereta                       ",Fore.RED +"|")
+        print(Fore.RED +"|"," 4. Hapus Jadwal Kereta                        ",Fore.RED +"|")
         print(Fore.RED +"|"," 5. Lihat Semua Transaksi                      ",Fore.RED +"|")
         print(Fore.RED +"|"," 6. Hapus Transaksi User                       ",Fore.RED +"|")
         print(Fore.RED +"|"," 0. Logout                                     ",Fore.RED +"|")
@@ -415,9 +435,9 @@ def menu_admin():
         elif pilih == "2":
             tambah_jadwal()
         elif pilih == "3":
-            hapus_jadwal()
-        elif pilih == "4":
             update_jadwal()
+        elif pilih == "4":
+            hapus_jadwal()
         elif pilih == "5":
             lihat_semua_transaksi()
         elif pilih == "6":
@@ -437,8 +457,8 @@ def menu_user(user):
         print(Fore.LIGHTYELLOW_EX + f"           Saldo Anda: Rp{int(user['Saldo']):,}           ")
         print(Fore.RED +"===================================================")
         print("1. Lihat Jadwal Kereta")
-        print("2. Beli Tiket")
-        print("3. Top Up Saldo")
+        print("2. Top Up saldo")
+        print("3. Beli Tiket Kereta")
         print("4. Lihat Riwayat Transaksi")
         print("0. Logout")
         try:
@@ -453,9 +473,9 @@ def menu_user(user):
         if pilih == "1":
             lihat_jadwal()
         elif pilih == "2":
-            beli_tiket(user)
-        elif pilih == "3":
             top_up(user)
+        elif pilih == "3":
+            beli_tiket(user)
         elif pilih == "4":
             lihat_transaksi_user(user)
         elif pilih == "0":
@@ -475,7 +495,7 @@ def main():
         print(Fore.RED +"|"," 3. Keluar                                     ",Fore.RED +"|")
         print(Fore.RED +"===================================================")
         try:
-            pilih = input("Pilih menu: ").strip()
+            pilih = input("Pilih menu: ")
         except KeyboardInterrupt:
             time.sleep(0.5)
             print(Fore.RED + "\n\nERROR, Jangan Tekan CRTL+C")
