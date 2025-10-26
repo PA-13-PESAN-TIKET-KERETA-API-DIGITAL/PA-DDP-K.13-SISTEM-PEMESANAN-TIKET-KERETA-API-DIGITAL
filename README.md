@@ -29,7 +29,7 @@ Sebelum menjalankan program, instal beberapa library berikut:
 <img width="1475" height="416" alt="image" src="https://github.com/user-attachments/assets/6f1d28ef-0646-4d8e-b900-367a7e0977b7" />
 
 ### Jalankan Program
-Tekan play di Visual Studio Code untuk memulai program.
+Tekan run di Visual Studio Code untuk memulai program.
 
 <img width="652" height="368" alt="image" src="https://github.com/user-attachments/assets/d116e2da-297b-427f-bb2b-fce3bb69fb9c" />
 
