@@ -77,7 +77,7 @@ Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: `
 #### Jika Ingin Melihat Jadwal Pilih ``1``
 Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
 
-Penjelasan : Sama seperti user, tetapi admin dapat mengubah data.
+Penjelasan : Sama seperti ``user``, tetapi ``admin`` dapat mengubah data.
 
 <img width="647" height="502" alt="image" src="https://github.com/user-attachments/assets/1fd797ab-5ff1-4c56-86b0-e8d9114c9a51" />
 
@@ -103,9 +103,9 @@ Penjelasan : Data akan dihapus dari file CSV.
 <img width="647" height="567" alt="image" src="https://github.com/user-attachments/assets/9041b8dd-7574-4311-9bba-351d371d1d5d" />
 
 #### Jika Ingin Melihat Semua Transaksi User Pilih ``5``
-Fungsi : Melihat semua transaksi user.
+Fungsi : Melihat semua transaksi ``user``.
 
-Penjelasan : Data diambil dari file CSV transaksi.csv.
+Penjelasan : Data diambil dari file CSV ``transaksi.csv``.
 
 <img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/f6db98b8-fe4d-4ce3-a6d3-3802e66ced8f" />
 
@@ -137,7 +137,7 @@ Penjelasan : Pengguna dapat memilih tiket yang tersedia
 <img width="650" height="457" alt="image" src="https://github.com/user-attachments/assets/93ab4717-96fd-40f1-b94a-6f3fe43d2c91" />
 
 #### Jika Ingin Top-Up Saldo Pilih ``2``:
-Fungsi : Menambahkan saldo ke akun user
+Fungsi : Menambahkan saldo ke akun ``user``
 
 Penjelasan : Saldo digunakan untuk membeli tiket
 
@@ -146,25 +146,26 @@ Penjelasan : Saldo digunakan untuk membeli tiket
 #### Jika Ingin Membeli Tiket Pilih ``3``:
 Fungsi : Memilih kereta dan membeli tiket jika saldo cukup
 
-Penjelasan : Transaksi akan disimpan di transaksi.csv
+Penjelasan : Transaksi akan disimpan di ``transaksi.csv``
 <img width="842" height="657" alt="image" src="https://github.com/user-attachments/assets/70a432cf-8474-4e4f-b785-b0a262fb3bb8" />
 
 #### JIka Ingin Membeli Tiket Pilih ``4``:
 Fungsi : Menampilkan semua tiket yang sudah dibeli
 
-Penjelasan : Data diambil dari transaksi.csv
+Penjelasan : Data diambil dari ``transaksi.csv``
 <img width="737" height="355" alt="image" src="https://github.com/user-attachments/assets/f550cd72-ae7d-415f-8cfc-edfbe124b134" />
 
 #### Jika Ingin Logout Pilih Pilih ``0``
 Fungsi : Keluar dari akun dan kembali ke menu awal
 
-Penjelasan : Untuk berpindah user atau admin
+Penjelasan : Untuk berpindah ``user`` atau ``admin``
 
 <img width="473" height="223" alt="image" src="https://github.com/user-attachments/assets/e005207a-453c-42e9-8b44-5ce19ba5ac17" />
 <img width="463" height="217" alt="image" src="https://github.com/user-attachments/assets/24ddf761-d1ef-4c04-9a61-f05557feb1e4" />
 
 ### 6. Mengakhiri Program
 Kapan pun dari menu utama, pilih:
+
 <img width="467" height="217" alt="image" src="https://github.com/user-attachments/assets/68d887d5-42c5-4371-91bc-889da0464843" />
 
 
