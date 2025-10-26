@@ -310,7 +310,13 @@ def hapus_transaksi_user():
     except EOFError:
         print(Fore.RED + "\nERROR: Jangan Tekan CTRL+Z")
         return
-    baru = [t for t in transaksi if t["Nama_User"] != target]
+    hapus = target.strip().lower()
+    baru = [t for t in transaksi if (t.get("Nama_User", "") or "").strip().lower() != hapus]
+
+    if len(baru) == len(transaksi):
+        print(Fore.RED + f"Tidak ada transaksi untuk user '{target}'.")
+        return
+
     save_csv(TRANSAKSI_FILE, baru, ["Nama_User", "ID_Kereta", "Nama_Kereta", "Asal", "Tujuan", "Jam_Berangkat", "Harga", "Tanggal_Transaksi"])
     print("Transaksi user berhasil dihapus!")
 
@@ -357,8 +363,23 @@ def beli_tiket(user):
             save_csv(USER_FILE, users, ["Nama", "Password", "Saldo", "Role"])
             save_csv(TRANSAKSI_FILE, transaksi, ["Nama_User", "ID_Kereta", "Nama_Kereta", "Asal", "Tujuan", "Jam_Berangkat", "Harga", "Tanggal_Transaksi"])
             print("Tiket berhasil dibeli!")
+            invoice = transaksi[-1]
+            invoice_table = PrettyTable(["User", "ID", "Kereta", "Asal", "Tujuan", "Jam", "Harga", "Tanggal"])
+            invoice_table.add_row([
+                invoice.get("Nama_User"),
+                invoice.get("ID_Kereta"),
+                invoice.get("Nama_Kereta"),
+                invoice.get("Asal"),
+                invoice.get("Tujuan"),
+                invoice.get("Jam_Berangkat"),
+                invoice.get("Harga"),
+                invoice.get("Tanggal_Transaksi")
+            ])
+            print("\nDetail transaksi:")
+            print(invoice_table)
             return
     print("ID Kereta tidak ditemukan.")
+    return
 
 def lihat_transaksi_user(user):
     transaksi = load_csv(TRANSAKSI_FILE)
@@ -396,7 +417,7 @@ def top_up(user):
     if saldo_baru > 1000000:
         print(Fore.RED + "Saldo tidak boleh melebihi Rp1.000.000!")
         print(Fore.YELLOW + f"Saldo saat ini: Rp{saldo_sekarang:,}")
-        print(Fore.YELLOW + f"Jumlah maksimal yang bisa ditambahkan: Rp{10_000_000 - saldo_sekarang:,}")
+        print(Fore.YELLOW + f"Jumlah maksimal yang bisa ditambahkan: Rp{1_000_000 - saldo_sekarang:,}")
         return
     
     user["Saldo"] = str(saldo_baru)
