@@ -1,3 +1,3 @@
-username,password,role,saldo
-manager,123,manager,0
-admin,123,admin,0
+Nama,Password,Saldo,Role
+admin,admin123,0,admin
+aku,1234,145000,user
