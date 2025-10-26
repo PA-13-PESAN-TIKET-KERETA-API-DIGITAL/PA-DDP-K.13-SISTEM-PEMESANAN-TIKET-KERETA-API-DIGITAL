@@ -34,7 +34,7 @@ Tekan run di Visual Studio Code untuk memulai program.
 <img width="652" height="368" alt="image" src="https://github.com/user-attachments/assets/d116e2da-297b-427f-bb2b-fce3bb69fb9c" />
 
 ### Menambahkan 3 File CSV di Dalam Folder
-Dibutuhkan agar program berjalan dengan semestinya dan memiliki database.
+Dibutuhkan agar program dapat berjalan dengan semestinya dan memiliki database.
 
 <img width="358" height="101" alt="image" src="https://github.com/user-attachments/assets/d7c5e441-0b6f-4acb-acfb-a20c5eb7cd35" />
 
@@ -45,14 +45,14 @@ Menunggu beberapa detik sebelum memulai program.
 <img width="470" height="165" alt="image" src="https://github.com/user-attachments/assets/bab684a7-dad7-48ed-b688-86fd72f584a7" />
 
 ### 2. Tampilan Awal
-Saat program dijalankan, akan muncul loading welcome lalu menu utama.
+Saat program dijalankan, akan muncul loading welcome lalu program akan menampilkan halaman menu utama.
 
 <img width="470" height="186" alt="image" src="https://github.com/user-attachments/assets/f60c4638-b5d9-4982-ad97-cfe01dc8d2f8" />
 
 ### 3. Register Akun Baru
 Jika belum punya akun:
 1. Pilih ``2. Register``
-2. Masukkan nama pengguna (tanpa spasi/simbol)
+2. Masukkan nama pengguna (tanpa spasi atau simbol)
 3. Masukkan password
 4. Akun baru otomatis disimpan ke users.csv dengan role user
 5. Setelah berhasil, kembali ke menu utama untuk login
@@ -60,7 +60,7 @@ Jika belum punya akun:
 <img width="465" height="137" alt="image" src="https://github.com/user-attachments/assets/2d405b66-8a76-44b8-8340-deefd63a6a9e" />
 
 ### 4. Login Akun
-Dari menu utama pilih ``1. Login``, lalu masukkan username dan password yang sudah terdaftar.
+Dari menu utama pilih ``1. Login``, lalu masukkan username dan password yang telah terdaftar.
 - Jika akun admin → masuk ke menu admin.
   
 <img width="467" height="162" alt="image" src="https://github.com/user-attachments/assets/b194ab09-1c54-4644-bc43-8052a597dcd0" />
@@ -70,12 +70,12 @@ Dari menu utama pilih ``1. Login``, lalu masukkan username dan password yang sud
 <img width="467" height="156" alt="image" src="https://github.com/user-attachments/assets/833a1494-1a55-4d28-92b8-062a030608fa" />
 
 ### 4. Menu Admin
-Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: ``admin, admin123, 0, admin``):
+Setelah login sebagai admin (akun bawaan bisa dilihat di file ``users.csv`` seperti: ``admin, admin123, 0, admin``):
 
 <img width="461" height="291" alt="image" src="https://github.com/user-attachments/assets/ddfdb74e-29d6-4911-9a2a-44c63ce807af" />
 
 #### Jika Ingin Melihat Jadwal Pilih ``1``
-Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
+Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``.
 
 Penjelasan : Sama seperti ``user``, tetapi ``admin`` dapat mengubah data.
 
@@ -117,9 +117,9 @@ Penjelasan : Misalnya, pembatalan atau kesalahan input data.
 <img width="888" height="442" alt="image" src="https://github.com/user-attachments/assets/2e0a9801-9520-4223-b71b-985f9de58cfa" />
 
 #### Jika Ingin Logout Pilih Pilih ``0``
-Fungsi : Kembali ke menu awal.
+Fungsi : Kembali ke halaman menu.
 
-Penjelasan : Untuk keluar dari mode admin.
+Penjelasan : Untuk keluar dari mode pengguna sebagai admin.
 
 <img width="466" height="271" alt="image" src="https://github.com/user-attachments/assets/9e67db5f-1aa5-4e8e-99dd-6bf815993a21" />
 <img width="473" height="238" alt="image" src="https://github.com/user-attachments/assets/a8c9c6a4-e0b2-49dc-b5c2-e22724301174" />
@@ -130,41 +130,41 @@ Setelah login sebagai ``user``:
 <img width="467" height="280" alt="image" src="https://github.com/user-attachments/assets/2b2b236c-9418-4ca9-916a-d02910b41545" />
 
 #### Jika Ingin Melihat Jadwal Pilih ``1``
-Fungsi : Menampilkan semua jadwal kereta dari ``jadwal.csv``
+Fungsi : Menampilkan semua jadwal kereta dari ``jadwal.csv``.
 
-Penjelasan : Pengguna dapat memilih tiket yang tersedia
+Penjelasan : Pengguna dapat melihat semua tiket kereta yang tersedia.
 
 <img width="650" height="457" alt="image" src="https://github.com/user-attachments/assets/93ab4717-96fd-40f1-b94a-6f3fe43d2c91" />
 
-#### Jika Ingin Top-Up Saldo Pilih ``2``:
-Fungsi : Menambahkan saldo ke akun ``user``
+#### Jika Ingin Top-Up Saldo Pilih ``2``
+Fungsi : Menambahkan saldo ke akun ``user``.
 
-Penjelasan : Saldo digunakan untuk membeli tiket
+Penjelasan : Saldo digunakan untuk membeli tiket kereta.
 
 <img width="465" height="265" alt="image" src="https://github.com/user-attachments/assets/3fd3f2fd-35de-4b6e-82db-edb2091a0eff" />
 
-#### Jika Ingin Membeli Tiket Pilih ``3``:
-Fungsi : Memilih kereta dan membeli tiket jika saldo cukup
+#### Jika Ingin Membeli Tiket Pilih ``3``
+Fungsi : Memilih dan membeli tiket kereta jika saldo cukup.
 
-Penjelasan : Transaksi akan disimpan di ``transaksi.csv``
+Penjelasan : Transaksi akan disimpan di dalam file ``transaksi.csv``.
 <img width="842" height="657" alt="image" src="https://github.com/user-attachments/assets/70a432cf-8474-4e4f-b785-b0a262fb3bb8" />
 
-#### JIka Ingin Membeli Tiket Pilih ``4``:
-Fungsi : Menampilkan semua tiket yang sudah dibeli
+#### JIka Ingin Membeli Tiket Pilih ``4``
+Fungsi : Menampilkan semua tiket kereta yang telah dibeli.
 
-Penjelasan : Data diambil dari ``transaksi.csv``
+Penjelasan : Data diambil dari file ``transaksi.csv``.
 <img width="737" height="355" alt="image" src="https://github.com/user-attachments/assets/f550cd72-ae7d-415f-8cfc-edfbe124b134" />
 
-#### Jika Ingin Logout Pilih Pilih ``0``
-Fungsi : Keluar dari akun dan kembali ke menu awal
+#### Jika Ingin Logout Pilih  ``0``
+Fungsi : Keluar dari akun user dan kembali ke halaman menu.
 
-Penjelasan : Untuk berpindah ``user`` atau ``admin``
+Penjelasan : Untuk berpindah role pengguna sebagai ``user`` atau ``admin``.
 
 <img width="473" height="223" alt="image" src="https://github.com/user-attachments/assets/e005207a-453c-42e9-8b44-5ce19ba5ac17" />
 <img width="463" height="217" alt="image" src="https://github.com/user-attachments/assets/24ddf761-d1ef-4c04-9a61-f05557feb1e4" />
 
 ### 6. Mengakhiri Program
-Kapan pun dari menu utama, pilih:
+Untuk mengakhiri sistem pemrograman, maka pilih:
 
 <img width="467" height="217" alt="image" src="https://github.com/user-attachments/assets/68d887d5-42c5-4371-91bc-889da0464843" />
 
