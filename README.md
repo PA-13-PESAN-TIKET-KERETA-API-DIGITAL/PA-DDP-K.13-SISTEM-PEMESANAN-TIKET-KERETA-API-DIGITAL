@@ -63,7 +63,7 @@ Jika belum punya akun:
 Dari menu utama pilih ``1. Login``, lalu masukkan username dan password yang sudah terdaftar.
 - Jika akun admin → masuk ke menu admin.
   
-<img width="472" height="150" alt="image" src="https://github.com/user-attachments/assets/1b9ae97a-c309-4180-9d79-63d085a3941d" />
+
 
 - Jika akun user → masuk ke menu user.
   
@@ -72,27 +72,27 @@ Dari menu utama pilih ``1. Login``, lalu masukkan username dan password yang sud
 ### 4. Menu Admin
 Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: ``admin, admin123, 0, admin``):
 
-<img width="471" height="291" alt="image" src="https://github.com/user-attachments/assets/cf549bc4-f6e3-4514-8bfe-d7fd496fe80c" />
+
 
 #### Jika Ingin Melihat Jadwal Pilih ``1``
 Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
 
 Penjelasan : Sama seperti user, tetapi admin dapat mengubah data.
-<img width="651" height="477" alt="image" src="https://github.com/user-attachments/assets/5b3f3138-6588-4b87-8d60-16d30130ae44" />
+
 
 #### Jika Ingin Menambah Jadwal Pilih ``2``
 Fungsi : Menambahkan data kereta baru ke jadwal.
 
 Penjelasan : Wajib isi ID kereta yang berbeda agar tidak duplikat.
 
-<img width="471" height="413" alt="image" src="https://github.com/user-attachments/assets/6cceb3df-6080-43ea-a3a2-496fe9867a6a" />
+
 
 #### Jika Ingin Mengupdate Jadwal Pilih ``3``
 Fungsi : Mengubah data jadwal kereta yang sudah ada.
 
 Penjelasan : Dapat mengubah nama kereta, asal kereta, tujuan kereta, jam keberangkatan, dan harga tiket kereta.
 
-<img width="642" height="552" alt="image" src="https://github.com/user-attachments/assets/9589f972-a349-4429-a3c9-d92257c829a7" />
+
 
 #### Jika Ingin Menghapus Jadwal Pilih ``4``
 Fungsi : Menghapus jadwal kereta berdasarkan ID kereta.
