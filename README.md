@@ -1,7 +1,7 @@
 # PA-DDP-K.13-SISTEM-PEMESANAN-TIKET-KERETA-API-DIGITAL
 
 ## Deskripsi
-Program ini merupakan aplikasi pemesanan tiket kereta api berbasis terminal/CLI menggunakan Python. Sistem ini menyediakan fitur **login/register, pembelian tiket, top-up saldo, serta manajemen jadwal dan transaksi** untuk admin.
+Program ini merupakan simulasi sistem pemesanan tiket kereta api digital berbasis terminal/CLI yang menggunakan bahasa pemrograman Python. Sistem ini menyediakan fitur **login atau register akun, pembelian tiket kereta, top-up saldo, serta manajemen jadwal kereta dan transaksi**, yang mana nantinya data tersebut akan tersimpan ke dalam file CSV.
 
 ## Nama Kelompok & Anggota
 Kelompok : 13
@@ -60,8 +60,7 @@ Jika belum punya akun:
 <img width="465" height="137" alt="image" src="https://github.com/user-attachments/assets/2d405b66-8a76-44b8-8340-deefd63a6a9e" />
 
 ### 4. Login Akun
-Dari menu utama, pilih ``1. Login``
-Masukkan username dan password yang sudah terdaftar.
+Dari menu utama pilih ``1. Login``, lalu masukkan username dan password yang sudah terdaftar.
 - Jika akun admin → masuk ke menu admin.
   
 <img width="472" height="150" alt="image" src="https://github.com/user-attachments/assets/1b9ae97a-c309-4180-9d79-63d085a3941d" />
