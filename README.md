@@ -146,13 +146,15 @@ Penjelasan : Saldo digunakan untuk membeli tiket kereta.
 #### Jika Ingin Membeli Tiket Pilih ``3``
 Fungsi : Memilih dan membeli tiket kereta jika saldo cukup.
 
-Penjelasan : Transaksi akan disimpan di dalam file ``transaksi.csv``.
+Penjelasan : Transaksi akan disimpan ke dalam file ``transaksi.csv``.
+
 <img width="842" height="657" alt="image" src="https://github.com/user-attachments/assets/70a432cf-8474-4e4f-b785-b0a262fb3bb8" />
 
 #### JIka Ingin Membeli Tiket Pilih ``4``
 Fungsi : Menampilkan semua tiket kereta yang telah dibeli.
 
 Penjelasan : Data diambil dari file ``transaksi.csv``.
+
 <img width="737" height="355" alt="image" src="https://github.com/user-attachments/assets/f550cd72-ae7d-415f-8cfc-edfbe124b134" />
 
 #### Jika Ingin Logout Pilih  ``0``
@@ -161,6 +163,7 @@ Fungsi : Keluar dari akun user dan kembali ke halaman menu.
 Penjelasan : Untuk berpindah role pengguna sebagai ``user`` atau ``admin``.
 
 <img width="473" height="223" alt="image" src="https://github.com/user-attachments/assets/e005207a-453c-42e9-8b44-5ce19ba5ac17" />
+
 <img width="463" height="217" alt="image" src="https://github.com/user-attachments/assets/24ddf761-d1ef-4c04-9a61-f05557feb1e4" />
 
 ### 6. Mengakhiri Program
