@@ -33,13 +33,13 @@ Tekan run di Visual Studio Code untuk memulai program.
 
 <img width="652" height="368" alt="image" src="https://github.com/user-attachments/assets/d116e2da-297b-427f-bb2b-fce3bb69fb9c" />
 
-### Menambahkan 3 file CSV didalam folder
+### Menambahkan 3 File CSV di Dalam Folder
 Dibutuhkan agar program berjalan dengan semestinya dan memiliki database.
 
 <img width="358" height="101" alt="image" src="https://github.com/user-attachments/assets/d7c5e441-0b6f-4acb-acfb-a20c5eb7cd35" />
 
 ## Panduan Penggunaan
-### 1. Loading welcome
+### 1. Loading Welcome
 Menunggu beberapa detik sebelum memulai program.
 
 <img width="470" height="165" alt="image" src="https://github.com/user-attachments/assets/bab684a7-dad7-48ed-b688-86fd72f584a7" />
@@ -77,28 +77,35 @@ Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: `
 
 #### Jika Ingin Melihat Jadwal Pilih ``1``
 Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
+
 Penjelasan : Sama seperti user, tetapi admin dapat mengubah data.
 
 #### Jika Ingin Menambah Jadwal Pilih ``2``
 Fungsi : Menambahkan data kereta baru ke jadwal.
+
 Penjelasan : Wajib isi ID kereta yang berbeda agar tidak duplikat.
 
 #### Jika Ingin Mengupdate Jadwal Pilih ``3``
 Fungsi : Mengubah data jadwal kereta yang sudah ada.
+
 Penjelasan : Dapat mengubah nama kereta, asal kereta, tujuan kereta, jam keberangkatan, dan harga tiket kereta.
 
 #### Jika Ingin Menghapus Jadwal Pilih ``4``
 Fungsi : Menghapus jadwal kereta berdasarkan ID kereta.
+
 Penjelasan : Data akan dihapus dari file CSV.
 
 #### Jika Ingin Melihat Semua Transaksi User Pilih ``5``
 Fungsi : Melihat semua transaksi user.
+
 Penjelasan : Data diambil dari file CSV transaksi.csv.
 
 #### Jika Ingin Menghapus Transaksi User Pilih ``6``
 Fungsi : Menghapus transaksi tertentu jika diperlukan.
+
 Penjelasan : Misalnya, pembatalan atau kesalahan input data.
 
 #### Jika Ingin Logout Pilih Pilih ``7``
 Fungsi : Kembali ke menu awal.
+
 Penjelasan : Untuk keluar dari mode admin.
