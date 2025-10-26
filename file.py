@@ -301,7 +301,9 @@ def lihat_semua_transaksi():
 
 def hapus_transaksi_user():
     transaksi = load_csv(TRANSAKSI_FILE)
-    lihat_semua_transaksi()
+    if not transaksi:
+        print("Transaksi user tidak ditemukan!")
+        return
     try:
         target = input("Masukkan nama user yang ingin dihapus transaksinya: ")
     except KeyboardInterrupt:
@@ -310,13 +312,11 @@ def hapus_transaksi_user():
     except EOFError:
         print(Fore.RED + "\nERROR: Jangan Tekan CTRL+Z")
         return
-    hapus = target.strip().lower()
-    baru = [t for t in transaksi if (t.get("Nama_User", "") or "").strip().lower() != hapus]
-
-    if len(baru) == len(transaksi):
-        print(Fore.RED + f"Tidak ada transaksi untuk user '{target}'.")
+    cek = any(t["Nama_User"].lower() == target.lower() for t in transaksi)
+    if not cek:
+        print(Fore.RED + f"Transaksi tidak ditemukan!")
         return
-
+    baru = [t for t in transaksi if t["Nama_User"] != target]
     save_csv(TRANSAKSI_FILE, baru, ["Nama_User", "ID_Kereta", "Nama_Kereta", "Asal", "Tujuan", "Jam_Berangkat", "Harga", "Tanggal_Transaksi"])
     print("Transaksi user berhasil dihapus!")
 
