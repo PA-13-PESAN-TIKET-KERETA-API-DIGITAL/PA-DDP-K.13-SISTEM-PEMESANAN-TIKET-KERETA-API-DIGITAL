@@ -33,7 +33,7 @@ Tekan run di Visual Studio Code untuk memulai program.
 
 <img width="652" height="368" alt="image" src="https://github.com/user-attachments/assets/d116e2da-297b-427f-bb2b-fce3bb69fb9c" />
 
-### Menambahkan 3 File CSV di Dalam Folder
+### Membuat 3 File CSV di Dalam Folder
 Dibutuhkan agar program dapat berjalan dengan semestinya dan memiliki database.
 
 <img width="358" height="101" alt="image" src="https://github.com/user-attachments/assets/d7c5e441-0b6f-4acb-acfb-a20c5eb7cd35" />
