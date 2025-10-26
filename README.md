@@ -13,10 +13,12 @@ Anggota :
 
 ## Flowchart
 ### Flowchart Menu Login
-<img width="550" height="749" alt="image" src="https://github.com/user-attachments/assets/22d90559-259c-4cc6-9c88-f7eff10e74bf" />
+![Flowchart PA 100-Menu Login](https://github.com/user-attachments/assets/35e43369-02e5-44bb-ab94-11bf1320ab27)
 
 ### Flowchart Menu Sebagai Admin
-<img width="833" height="631" alt="image" src="https://github.com/user-attachments/assets/88e55759-0314-4d1f-9b8b-448047a874fe" />
+![Flowchart PA 100-Login User](https://github.com/user-attachments/assets/d14d9d9f-d81d-4c29-a539-5db132753476)
+
 
 ### Flowchart Menu Sebagai User
-<img width="833" height="466" alt="image" src="https://github.com/user-attachments/assets/1a60fcde-93a5-49d0-8268-aa59dd97b2c7" />
+![Flowchart PA 100-Login Admin](https://github.com/user-attachments/assets/c8c88db0-9b25-42bc-898f-308d8bdedc2a)
+
