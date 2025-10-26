@@ -29,23 +29,23 @@ Sebelum menjalankan program, instal beberapa library berikut:
 <img width="1475" height="416" alt="image" src="https://github.com/user-attachments/assets/6f1d28ef-0646-4d8e-b900-367a7e0977b7" />
 
 ### Jalankan Program
-Tekan play di Visual Studio Code untuk memulai program
+Tekan play di Visual Studio Code untuk memulai program.
 
 <img width="652" height="368" alt="image" src="https://github.com/user-attachments/assets/d116e2da-297b-427f-bb2b-fce3bb69fb9c" />
 
 ### Menambahkan 3 file CSV didalam folder
-Dibutuhkan agar program berjalan dengan semestinya dan memiliki database
+Dibutuhkan agar program berjalan dengan semestinya dan memiliki database.
 
 <img width="358" height="101" alt="image" src="https://github.com/user-attachments/assets/d7c5e441-0b6f-4acb-acfb-a20c5eb7cd35" />
 
 ## Panduan Penggunaan
 ### 1. Loading welcome
-Menunggu beberapa detik sebelum memulai program
+Menunggu beberapa detik sebelum memulai program.
 
 <img width="470" height="165" alt="image" src="https://github.com/user-attachments/assets/bab684a7-dad7-48ed-b688-86fd72f584a7" />
 
 ### 2. Tampilan Awal
-Saat program dijalankan, akan muncul loading welcome lalu menu utama:
+Saat program dijalankan, akan muncul loading welcome lalu menu utama.
 
 <img width="470" height="186" alt="image" src="https://github.com/user-attachments/assets/f60c4638-b5d9-4982-ad97-cfe01dc8d2f8" />
 
@@ -55,18 +55,18 @@ Jika belum punya akun:
 2. Masukkan nama pengguna (tanpa spasi/simbol)
 3. Masukkan password
 4. Akun baru otomatis disimpan ke users.csv dengan role user
-5. Setelah berhasil, kembali ke menu utama untuk login.
+5. Setelah berhasil, kembali ke menu utama untuk login
 
 <img width="465" height="137" alt="image" src="https://github.com/user-attachments/assets/2d405b66-8a76-44b8-8340-deefd63a6a9e" />
 
 ### 4. Login Akun
 Dari menu utama, pilih ``1. Login``
 Masukkan username dan password yang sudah terdaftar.
-- Jika akun admin → masuk ke menu admin
+- Jika akun admin → masuk ke menu admin.
   
 <img width="472" height="150" alt="image" src="https://github.com/user-attachments/assets/1b9ae97a-c309-4180-9d79-63d085a3941d" />
 
-- Jika akun user → masuk ke menu user
+- Jika akun user → masuk ke menu user.
   
 <img width="467" height="156" alt="image" src="https://github.com/user-attachments/assets/833a1494-1a55-4d28-92b8-062a030608fa" />
 
@@ -77,28 +77,28 @@ Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: `
 
 #### Jika Ingin Melihat Jadwal Pilih ``1``
 Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
-Penjelasan : Sama seperti user tapi admin bisa edit data
+Penjelasan : Sama seperti user, tetapi admin dapat mengubah data.
 
 #### Jika Ingin Menambah Jadwal Pilih ``2``
-Fungsi : Menambahkan data kereta baru ke jadwal
-Penjelasan : Wajib isi ID unik agar tidak duplikat
+Fungsi : Menambahkan data kereta baru ke jadwal.
+Penjelasan : Wajib isi ID kereta yang berbeda agar tidak duplikat.
 
 #### Jika Ingin Mengupdate Jadwal Pilih ``3``
-Fungsi : Mengedit data jadwal yang sudah ada
-Penjelasan : Dapat mengubah nama, asal, tujuan, jam, harga
+Fungsi : Mengubah data jadwal kereta yang sudah ada.
+Penjelasan : Dapat mengubah nama kereta, asal kereta, tujuan kereta, jam keberangkatan, dan harga tiket kereta.
 
 #### Jika Ingin Menghapus Jadwal Pilih ``4``
-Fungsi : Menghapus jadwal kereta berdasarkan ID
-Penjelasan : Data akan dihapus dari file CSV
+Fungsi : Menghapus jadwal kereta berdasarkan ID kereta.
+Penjelasan : Data akan dihapus dari file CSV.
 
 #### Jika Ingin Melihat Semua Transaksi User Pilih ``5``
-Fungsi : Melihat semua transaksi user
-Penjelasan : Data diambil dari transaksi.csv
+Fungsi : Melihat semua transaksi user.
+Penjelasan : Data diambil dari file CSV transaksi.csv.
 
 #### Jika Ingin Menghapus Transaksi User Pilih ``6``
-Fungsi : Menghapus transaksi tertentu jika diperlukan
-Penjelasan : Misalnya pembatalan atau kesalahan input
+Fungsi : Menghapus transaksi tertentu jika diperlukan.
+Penjelasan : Misalnya, pembatalan atau kesalahan input data.
 
 #### Jika Ingin Logout Pilih Pilih ``7``
-Fungsi : Kembali ke menu awal
-Penjelasan : Untuk keluar dari mode admin
+Fungsi : Kembali ke menu awal.
+Penjelasan : Untuk keluar dari mode admin.
