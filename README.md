@@ -78,21 +78,27 @@ Setelah login sebagai admin (akun bawaan bisa dibuat di ``users.csv`` seperti: `
 Fungsi : Menampilkan seluruh jadwal dari ``jadwal.csv``
 
 Penjelasan : Sama seperti user, tetapi admin dapat mengubah data.
+<img width="651" height="477" alt="image" src="https://github.com/user-attachments/assets/5b3f3138-6588-4b87-8d60-16d30130ae44" />
 
 #### Jika Ingin Menambah Jadwal Pilih ``2``
 Fungsi : Menambahkan data kereta baru ke jadwal.
 
 Penjelasan : Wajib isi ID kereta yang berbeda agar tidak duplikat.
 
+<img width="471" height="413" alt="image" src="https://github.com/user-attachments/assets/6cceb3df-6080-43ea-a3a2-496fe9867a6a" />
+
 #### Jika Ingin Mengupdate Jadwal Pilih ``3``
 Fungsi : Mengubah data jadwal kereta yang sudah ada.
 
 Penjelasan : Dapat mengubah nama kereta, asal kereta, tujuan kereta, jam keberangkatan, dan harga tiket kereta.
 
+<img width="642" height="552" alt="image" src="https://github.com/user-attachments/assets/9589f972-a349-4429-a3c9-d92257c829a7" />
+
 #### Jika Ingin Menghapus Jadwal Pilih ``4``
 Fungsi : Menghapus jadwal kereta berdasarkan ID kereta.
 
 Penjelasan : Data akan dihapus dari file CSV.
+
 
 #### Jika Ingin Melihat Semua Transaksi User Pilih ``5``
 Fungsi : Melihat semua transaksi user.
